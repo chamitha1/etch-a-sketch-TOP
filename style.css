@@ -7,13 +7,19 @@ body{
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 401px;
-    height:401px;
+    width: 481px;
+    height:481px;
     align-content: flex-start;
+    border:1px solid
 }
 
 .box{
     border: 0;
-    width:25px;
-    height: 25px;
+    width:30px;
+    height: 30px;
 }
+
+/* .box:hover{
+    background-color: lightblue;
+}
+ */
