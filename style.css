@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 401px;
+    height:401px;
+    align-content: flex-start;
+}
+
+.box{
+    border: 0;
+    width:25px;
+    height: 25px;
+}
