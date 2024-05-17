@@ -15,7 +15,9 @@ function toggleDefaultMode(container){
     const boxes = document.querySelectorAll(".box");
     
     for(let i=0; i<boxes.length; i++){
+        boxes[i].style.opacity = "100%";
         boxes[i].addEventListener("mouseover", ()=>{
+            boxes[i].style.opacity = "100%";
             boxes[i].style.backgroundColor = "grey";
         });
     }
@@ -26,6 +28,7 @@ function toggleEraser(container){
     
     for(let i=0; i<boxes.length; i++){
         boxes[i].addEventListener("mouseover", ()=>{
+            boxes[i].style.opacity = "100%";
             boxes[i].style.backgroundColor = "white";
         });
     } 
@@ -35,7 +38,9 @@ function toggleColor(container){
     const boxes = document.querySelectorAll(".box");
     
     for(let i=0; i<boxes.length; i++){
+
         boxes[i].addEventListener("mouseover", ()=>{
+            boxes[i].style.opacity = "100%";
             boxes[i].style.backgroundColor = "rgb(" + randomInt() +","
                              +randomInt() + "," + randomInt() + ")";
         });
@@ -49,6 +54,7 @@ function toggleShading(container){
         let value = 10;
 
         boxes[i].addEventListener("mouseover", ()=>{
+            boxes[i].style.backgroundColor = "black";
             boxes[i].style.opacity = value +"%";
             value += 10;
         });
